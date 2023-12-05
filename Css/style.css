@@ -1,0 +1,213 @@
+.h6 {
+  grid-area: h6;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0.5rem;
+  width: 100%;
+  font-size: small;
+}
+
+header {
+  grid-area: header;
+  width: 100%;
+  background-color: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 180px;
+  border-radius: 50px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+li ul {
+  display: none;
+}
+
+.botomSub:hover ul {
+  display: block;
+  position: absolute;
+  background-color: black;
+  border-radius: 20px;
+  padding: 5px;
+  height: auto;
+  border: 1px solid white;
+}
+
+.botomSub ul li a {
+  display: block;
+  color: grey;
+  margin: 10px;
+  padding: 10px;
+}
+
+.botomSub ul li a:hover {
+  color: white;
+}
+
+.menu a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+  transition: 0.4s;
+}
+
+.cont {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.mostrar-menu,
+.esconder-menu {
+  font-size: 46px;
+  cursor: pointer;
+  display: none;
+  transition: 0.4s;
+}
+
+.mostrar-menu {
+  order: 1;
+  padding: 0.5rem;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover {
+  color: black;
+}
+
+#check {
+  display: none;
+}
+
+.footer {
+  grid-area: footer;
+  margin: 10px;
+}
+
+.carrusel {
+  width: 100%;
+  position: relative;
+  z-index: -100;
+}
+
+hr {
+  position: relative;
+  z-index: -200;
+}
+
+.main {
+  grid-area: main;
+  margin: 10px;
+}
+
+.h4 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.contInicio {
+  display: row;
+  padding: 8px;
+}
+
+.imagen {
+  width: 33%;
+  padding: 2px;
+  margin: 0 auto;
+}
+
+.imgCategoriaRemeras {
+  display: row;
+  justify-content: center;
+  width: 90%;
+}
+
+.imagenShorts {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .mostrar-menu,
+  .esconder-menu {
+    display: block;
+  }
+  .menu {
+    position: fixed;
+    width: 100%;
+    background-color: gray;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 100px 0;
+    transition: 0.8s;
+  }
+  .cont {
+    display: block;
+    padding: 20px;
+  }
+  .cont li {
+    padding: 20px;
+  }
+  .botomSub:hover ul {
+    display: block;
+    position: relative;
+  }
+  .esconder-menu {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #check:checked ~ .menu {
+    right: 0;
+  }
+}
+@media (max-width: 1440px) {
+  .imagen {
+    width: 49%;
+    padding: 2px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 320px) {
+  .imagen {
+    width: 25%;
+    padding: 2px;
+    margin: 0 auto;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.conteiner {
+  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Alegreya Sans SC", sans-serif;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.2fr 0.1fr 0.1fr;
+  grid-template-areas: "h6 h6 h6 h6" "header header header header" "main main main main" "footer footer footer footer ";
+}
+
+/*# sourceMappingURL=style.css.map */

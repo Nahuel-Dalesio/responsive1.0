@@ -1,0 +1,38 @@
+.carrusel{ 
+    width: 100%;
+    position: relative;
+    z-index: -100;
+}
+hr{
+    position: relative;
+    z-index: -200;
+}
+.main{
+    grid-area: main;
+    margin: 10px;
+    
+}
+.h4{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.contInicio{
+    display:row;
+    padding: 8px; 
+}
+.imagen{
+    width: 33%;
+    padding: 2px;
+    margin: 0 auto;
+}
+.imgCategoriaRemeras{
+    display: row;
+    justify-content: center;
+    width: 90%;
+
+}
+.imagenShorts{
+    width: 100%;
+
+}

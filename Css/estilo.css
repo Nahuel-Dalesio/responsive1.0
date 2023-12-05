@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -148,61 +149,58 @@ hr{
 
 /*responsive cambie de 768 a 820 por que se rompe */
 
-    @media(max-width: 768px){
-        .mostrar-menu,
-        .esconder-menu{
-            display: block;
-            
-        }
-        .menu{
-            position: fixed;
-            width: 100%;
-            background-color:gray ;
-            right: -100%;  
-            top:0;
-            text-align: center;
-            padding: 100px 0;
-            transition: 0.8s;
-        }
-        .cont{
-            display: block;
-            padding: 20px;
-            
-        }
-        .cont li{
-            padding: 20px;
-            
-        }
-        .botomSub:hover ul {
-            display: block;
-            position:relative;
-            
-        }
-        .esconder-menu{
-            position: absolute;
-            top:40px;
-            right: 40px;
-        }
-        #check:checked ~ .menu{
-            right: 0;
-            
-        }
+@media(max-width: 768px){
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+        
     }
+    .menu{
+        position: fixed;
+        width: 100%;
+        background-color:gray ;
+        right: -100%;  
+        top:0;
+        text-align: center;
+        padding: 100px 0;
+        transition: 0.8s;
+    }
+    .cont{
+        display: block;
+        padding: 20px;
+        
+    }
+    .cont li{
+        padding: 20px;
+        
+    }
+    .botomSub:hover ul {
+        display: block;
+        position:relative;
+        
+    }
+    .esconder-menu{
+        position: absolute;
+        top:40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+        
+    }
+}
 
 @media (max-width:1440px){
 .imagen{
-    width: 49%;
-    padding: 2px;
-    margin: 0 auto;
+width: 49%;
+padding: 2px;
+margin: 0 auto;
 }
 }
 @media (max-width:320px){
 .imagen{
-    width: 25%;
-    padding: 2px;
-    margin: 0 auto;
+width: 25%;
+padding: 2px;
+margin: 0 auto;
 }
 }
-
-
-
