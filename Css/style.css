@@ -95,11 +95,6 @@ li ul {
   display: none;
 }
 
-.footer {
-  grid-area: footer;
-  margin: 10px;
-}
-
 .carrusel {
   width: 100%;
   position: relative;
@@ -141,6 +136,11 @@ hr {
 
 .imagenShorts {
   width: 100%;
+}
+
+.footer {
+  grid-area: footer;
+  margin: 10px;
 }
 
 @media (max-width: 768px) {
